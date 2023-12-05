@@ -1,3 +1,4 @@
+/* Header */
 header{
     padding:20px;
     margin:0;
@@ -21,7 +22,7 @@ header{
 .item-lista{
     display: inline-flex;
     margin-top:40px;
-    margin-left:50px;
+    margin-left:20px;
     margin-right:50px;
     font-size: 30px;
     color:aliceblue; 
@@ -40,6 +41,7 @@ header{
 }
 
 /* main */
+/* Sobre mim */
 main{
     margin-top: -30px;
     /* height:750px; */
@@ -68,10 +70,22 @@ main{
     font-size: 20px;
     color:azure;
 }
-
+/* Tecnologias */
+.div-tecnologias{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tech{
+    width:100px;
+    height: 100px;
+    margin:20px;
+}
 /* Projetos */
 
-.titulo-projetos{
+.titulo{
+    justify-content: center;
     width:50%;
     margin-left:25%;
     font-size: 40px;

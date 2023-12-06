@@ -2,16 +2,15 @@
 header{
     padding:20px;
     margin:0;
-    background-image: url('https://img.freepik.com/fotos-gratis/podio-redondo-de-luz-vermelha-e-fundo-preto-para-simulacao_43614-950.jpg');
-    background-size: cover;
+    background-color: rgb(60, 60, 60);
     display:flex;
     flex-direction: row;
     justify-content:center;
 }
-.img{
-    width:150px;
-    height:150px;
-    margin-top:10px;
+.titulo-header{
+    color: rgb(104, 192, 255);
+    margin-top: 60px;
+    margin-left:20px;
 }
 .lista-navegacao{
     display: flex;
@@ -22,31 +21,39 @@ header{
 .item-lista{
     display: inline-flex;
     margin-top:40px;
-    margin-left:20px;
-    margin-right:50px;
+    margin-bottom: 40px;
+    margin-left:15px;
+    margin-right:15px;
     font-size: 30px;
     color:aliceblue; 
     cursor:pointer;
     padding:5px;
+    text-decoration: none;
+}
+.anchor{
+    text-decoration: none;
 }
 .item-lista:hover{
     color:dimgrey;
     border: 2px solid rgb(255, 255, 255);
     transition: 0.75s;
 }
-.img2{
-    width:170px;
-    height: 170px;
-    margin-top:5px;
-}
 
 /* main */
 /* Sobre mim */
+.div-intro{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.sub-div-intro{
+    display:flex;
+    flex-direction:column;
+}
 main{
     margin-top: -30px;
     /* height:750px; */
-    background-image: url("https://i.pinimg.com/736x/63/bd/40/63bd40ba4e2c3ceb8ecb92abeea19e24.jpg");
-    background-size: cover;
+    background-color: rgb(120, 120, 120);
     padding: 100px;
 }
 .titulo-principal{
@@ -57,8 +64,8 @@ main{
 .hello-world{
     color:azure;
 }
-.apresentacao{
-    width: 50%;
+#apresentacao{
+    width: 90%;
     margin-top:25px;
     font-size: 35px;
     color:lavender;
@@ -70,7 +77,22 @@ main{
     font-size: 20px;
     color:azure;
 }
+.foto-perfil{
+    border-radius:50%;
+    height:350px;
+    width:350px;
+    margin-bottom:50px;
+    border:2px solid navy;
+}
 /* Tecnologias */
+#titulo-tecnologias{
+    justify-content: center;
+    width:50%;
+    margin-left:25%;
+    font-size: 40px;
+    color: #d380ed;
+    font-family: 'Pixelify Sans', sans-serif;
+}
 .div-tecnologias{
     display:flex;
     flex-direction: row;
@@ -82,9 +104,24 @@ main{
     height: 100px;
     margin:20px;
 }
+/* Habilidades */
+#titulo-habilidades{
+    justify-content: center;
+    width:50%;
+    margin-left:25%;
+    font-size: 40px;
+    color: #d380ed;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.item-habilidade{
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+    margin:10px;
+}
 /* Projetos */
 
-.titulo{
+#titulo-projetos{
     justify-content: center;
     width:50%;
     margin-left:25%;
@@ -108,8 +145,8 @@ main{
     background-color: whitesmoke;
 }
 .img-projeto{
-    width: 270px;
-    height: 270px;
+    width: 100%;
+    height: 280px;
 }
 .titulo-projeto{
     color:rgb(0, 0, 0);
@@ -138,8 +175,65 @@ main{
     background-color: rgb(90, 6, 179);
     transition: 0.7s;
 }
+.repositorio-gh{
+    text-decoration:none;
+    color:grey;
+    margin:5px;
+}
+.repositorio-gh:hover{
+    color:rgb(72, 71, 71);
+    transition:0.5s;
+    border-bottom:1px solid black;
+}
 .texto-botao{
     color: cornsilk;
     font-weight: bold;
     text-decoration: none;
+}
+
+/* Footer - contato */
+.footer{
+    margin-top:-33px;
+    background-color:rgb(64, 63, 63);
+    padding:10px;
+}
+#titulo-footer{
+    justify-content: center;
+    width:50%;
+    margin-left:25%;
+    font-size: 40px;
+    color: #d380ed;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.contato{
+    display:flex;
+    flex-direction:row;
+}
+.contact-icon{
+    height:50px;
+    width:50px;
+    margin-left: 50px;
+}
+.link-contato{
+    color:white;
+    font-size:18px;
+    margin-left:15px;
+}
+.fim{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+}
+.orc-icon{
+    height:40px;
+    width:40px;
+    margin-left:45%;
+    border:1px solid green;
+    border-radius:50%;
+    padding:3px;
+    background-color: rgb(75, 109, 22);
+}
+.desenvolvedor{
+    margin-left:30%;
+    color:white;
 }

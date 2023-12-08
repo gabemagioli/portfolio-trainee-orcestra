@@ -32,6 +32,7 @@ header{
 }
 .anchor{
     text-decoration: none;
+    color:aliceblue;
 }
 .item-lista:hover{
     color:dimgrey;
